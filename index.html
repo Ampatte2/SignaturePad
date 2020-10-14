@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Contract</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://shield-health.s3-us-west-2.amazonaws.com/quixi_logo_no_text.png">
+  
+</head>
+<body>
+  <div class="formContainer">
+
+    <div class="bannerDiv">
+        <h1 class="bannerHeading">COVID-19 Contract</h1>
+    </div>
+
+    <h2>Contract - Attestation</h2>
+
+    <p>By completing this letter, I attest that the answers provided in completing this screening tool and assessment were truthful and complete. I understand the contagious nature of COVID-19 and the risk associated with serious illness in the elderly.</p> 
+    <p>I have completed this screening and will inform the facility administrator or supervisor should I experience any symptoms during my shift or visit inside this facility.</p>
+    <p>As a legal record of completing the COVID-19 screening, I am attesting to the truthfulness and completeness of my answers prior to entry at Woodbridge on 10/11/20.</p>
+    
+    <h2>Welcome to Woodbridge</h2>
+    
+    <form id="inputForm" action="https://www.quixi.com/internship-form"  method="POST">
+      <label for='nameInput'>Type your full name as a legal record of completing the COVID-19 screening</label>
+      <input type="text" name="name" placeholder="Your Name" id="nameInput" form="inputForm" required/>
+      <div class="canvasContainer">
+        <div class="canvasContainerButtons">
+          <select name="color" id="color" form="inputForm" class="colorsSelect" onchange="changeSignatureColor(this.value)" required>
+            <option value="">Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          <button onclick="clearCanvas()">Reset</button>
+        </div>
+        <div>
+            <canvas class="signatureCanvas">
+        </div>  
+      </div>
+      <div class="row">
+        <button type="submit" form="inputForm" value="submit" id="submitButton" onclick="onSubmitSendSignature(event)" disabled>Submit</button>
+      </div>
+    </form>
+  </div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,153 @@
+/* Elements */
+body, html {
+    font-family: Verdana, Geneva, sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 99px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: rgba(3, 126, 243, 1);
+    color: white;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+button:hover {
+    background-color: rgba(3, 126, 243, 0.8);
+}
+canvas{
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+}
+input {
+    background-color: rgba(3, 126, 243, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 99px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+input:hover {
+    background-color: rgba(3, 126, 243, 0.8);
+}
+input:focus {
+    border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	color: #FFFF;
+	outline: none;
+}
+label {
+    display:block;
+    margin: 10px 0;
+}
+select {
+    
+    appearance: none;
+    background-color: rgba(3, 126, 243, 1);
+    border: none;
+    border-radius: 99px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+/* Classes */
+.bannerDiv {
+    background: linear-gradient(150deg, #047ef3 50%, #1deff2 80%, #a1f7dd 100%);
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.bannerHeading{
+    color:#FFFF;
+    text-shadow: 0px 2px darkblue;
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.canvasContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    height:150px;
+}
+.canvasContainerButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px 0 0 ;
+}
+.colorsSelect{
+
+	color: #FFFF;
+    padding: 15px;
+    font-size: 16px;	
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: 99px;
+	background-color: rgba(3, 126, 243, 1);
+}
+.colorsSelect::-ms-expand {
+	display: none;
+}
+.colorsSelect:hover {
+	border-color: #888;
+}
+.colorsSelect:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	color: #FFFF;
+	outline: none;
+}
+.colorsSelect option {
+    font-weight:normal;
+    border-radius: 99px;
+}
+.formContainer {
+    
+    margin: 0 auto;
+    width: 25%;
+    font-size: 18px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.signatureCanvas {
+    border: 1px solid black;
+    width: 300px;
+    height:150px;
+    margin: auto;
+}
+
+/*Ids */
+#nameInput {
+    font-size: large;
+    color:  #FFFF;
+    width: calc(100% - 20px);
+    padding: 15px 0 15px 20px;
+}
+#submitButton {
+    margin-left: auto;
+}
+#submitButton:disabled {
+    background-color: lightgrey;
+}
+/*Psuedo Elements */
+::placeholder{
+    color:  #FFFF;
+}
